@@ -1,0 +1,145 @@
+/* font-family: 'Anton', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Koulen', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Orelega One', cursive; */
+a{
+  text-decoration: none;
+}
+img{
+  width: 100%;
+}
+.mainSection{
+  padding-top: 50px;
+}
+
+
+.slider{
+  position: relative;
+}
+.arrows{
+  font-size: 40px;
+}
+.rightarrow{
+  position: absolute;
+  top: 30%;
+  right: 30px;
+  transition: all ease-in-out 0.3;
+}
+.rightarrow:hover{
+  right: 20px;
+}
+
+.leftarrow{
+  position: absolute;
+  top: 30%;
+  left: 30px;
+  transition: all ease-in-out 0.3;
+}
+
+.leftarrow:hover{
+  left: 20px;
+
+}
+
+.tabs {
+  text-align: center;
+  margin-bottom: 1em;
+  
+
+}
+.tabs a:not(:last-child){
+  /* border-right: 1px solid black; */
+
+}
+.tabs a{
+  border: 1px solid rgb(78, 73, 73);
+  border-radius: 20px;
+  text-align: center;
+  margin: 0 auto;
+  color: aliceblue;
+
+  display: inline-block;
+  padding: .9em 1.5em;
+  text-align: center;
+  background-color: rgb(160, 84, 130);
+
+}
+
+
+
+
+.errorSection{
+  background-color: rgba(196, 63, 63, 0.404);
+  border-radius: 10px;
+  margin:1em 1.2em;
+  padding: 30px 50px;
+  position: relative;
+  display: none;
+}
+.closeError{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+
+.items{
+  max-width: 30%;
+}
+.items img{
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+.footer{
+  padding: 50px 30px;
+  background-color: rgb(31, 29, 29);
+  color: aliceblue;
+
+
+}
+.copyRights{
+  padding: 20px ;
+  background-color: rgb(29, 48, 48);
+  color: aliceblue;
+  text-align: center;
+}
+
+
+
+
+/* ************************** contact us ***************************************** */
+.verificationsBox
+{
+  display: none ;
+}
+
+.verificationsBox div
+{
+  width: 100px;
+  animation-name: example;
+  animation-duration: 4s;
+  margin-top: 2em;
+  position: relative;
+  width: 80%;
+  /* bottom: 100px; */
+ }
+
+ @keyframes example { 
+   0%   {left:0px; }
+ 25%  { left:200px;}
+ 50%  { left:200px;}
+ 75%  { left:0px; }
+ 100% {left:0px; }
+ }
+/* The element to apply the animation to */
