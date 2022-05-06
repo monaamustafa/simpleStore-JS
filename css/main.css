@@ -6,12 +6,12 @@
   margin: 0;
   padding: 0;
 }
-/* font-family: 'Anton', sans-serif;
-font-family: 'Dancing Script', cursive;
-font-family: 'Koulen', cursive;
-font-family: 'Lobster', cursive;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Orelega One', cursive; */
+/* font-family: 'Anton', sans-serif; */
+/* font-family: 'Dancing Script', cursive; */
+/* font-family: 'Koulen', cursive; */
+/* font-family: 'Lobster', cursive; */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Orelega One', cursive; */
 /* #8e44ad */
 a{
   text-decoration: none;
@@ -19,14 +19,62 @@ a{
 img{
   width: 100%;
 }
+h1,h2,h3,h4,h5,h6{
+font-family: 'Koulen', cursive;
+font-weight: 700;
+letter-spacing: .1em;
 
 
 
+}
+
+.navbar-brand{
+  font-weight: 900;
+  color: var(--mainColor) !important;
+  font-size: 30px;
+  font-family: 'Lobster', cursive;
+
+  
+}
+.navbar-brand::first-letter{
+  font-weight: 900;
+}
+
+.nav-link{
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: .1em;
+ font-family: 'Koulen', cursive;
+color: #8d44ad70 !important;
+  
+}
+
+.active{
+  color: var(--mainColor) !important;
+}
+.shoppingCart i{
+  font-size: 30px;
+  color: var(--mainColor);
+}
 
 
-.mainSection{
-  padding-top: 50px;
+.shoppingCart small{
+  font-size: 12px;
+ background-color: var(--mainColor);
+ color: var(--whiteColor);
+ padding:  .2em .7em ;
+ border-radius: 50%;
+
+}
+
+.banner{
   min-height: 100vh;
+}
+.mainSection{
+  padding: 50px;
+}
+.nav-bg {
+  background-color: #fff;
 }
 .scroll-top {
   background-color: var(--mainColor) ;
@@ -38,7 +86,8 @@ img{
   bottom: 10px;
   right: 10px;
   text-align: center;
-  /* display: none; */
+  display: none;
+  margin: 0;
   color: var(--whiteColor);
 }
 
@@ -48,6 +97,7 @@ img{
 }
 .arrows{
   font-size: 40px;
+  color: var(--whiteColor);
 }
 .rightarrow{
   position: absolute;
@@ -70,17 +120,32 @@ img{
   left: 20px;
 
 }
+.mainSection{
+  padding-top: 150px;
+}
+
+.aboutImg{
+ width: 40%;
+}
+.aboutText{
+ width: 50%;
+}
+.aboutText h4{
+  color: var(--mainColor);
+  font-size: 30px;
+  font-weight: 900;
+  display: inline-block;
+  border-bottom: 1px solid #8e44ad;
+
+}
+
+/* ****************************************** */
 
 .tabs {
   text-align: center;
   margin-bottom: 1em;
-  
-
 }
-.tabs a:not(:last-child){
-  /* border-right: 1px solid black; */
 
-}
 .tabs a{
   border: 1px solid var(--mainColor);
   border-radius: 10px;
@@ -91,18 +156,93 @@ img{
   padding: .9em 1.5em;
   text-align: center;
   background-color: var(--mainColor);
- cursor: pointer;
- transition: all ease-in-out 0.3s;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
 }
 
 .tabs a:hover{
   padding: .9em 2.3em;
 
 }
+.items{
+  
+  width: 30%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 10px;
+  margin-bottom: 2em;
+}
+.items img{
+  border-radius: 10px;
+  height: 300px;
+}
+.prodDetails{
+  padding: 1em;
+}
+.prodDetails h6{
+ color: var(--mainColor);
+ text-transform: capitalize;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: .07em;
+  font-size: 25px;
+}
+.prodDetails .addBtn{
+  margin-top: 1em;
+  padding: .7em 2em;
+font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  border-radius: 15px;
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+}
+
+.footer{
+  padding: 50px 30px;
+  background-color: #4b4b4b;
+  color: aliceblue;
+
+
+}
+.copyRights{
+  /* padding: 20px ; */
+  background-color:#3d3d3d;
+  color: aliceblue;
+  text-align: center;
+  margin: 0;
+}
+.copyRights p{
+  padding: 0;
+  margin: 0;
+}
 
 
 
+/* ************************** contact us ***************************************** */
+button{
+  background-color: var(--mainColor) !important;
+  border-color: var(--mainColor) !important;
+}
+.verificationsBox
+{
+  display: none ;
+}
 
+.verificationsBox div
+{
+  width: 100px;
+  animation-name: example;
+  animation-duration: 4s;
+  margin-top: 2em;
+  position: relative;
+  width: 80%;
+}
+
+@keyframes example { 
+  0%   {left:0px; }
+  25%  { left:200px;}
+  50%  { left:200px;}
+  75%  { left:0px; }
+  100% {left:0px; }
+}
 .errorSection{
   background-color: rgba(196, 63, 63, 0.404);
   border-radius: 10px;
@@ -118,62 +258,4 @@ img{
 }
 
 
-.items{
-  max-width: 30%;
-}
-.items img{
-  height: auto;
-}
 
-
-
-
-
-
-
-
-
-
-.footer{
-  padding: 50px 30px;
-  background-color: rgb(31, 29, 29);
-  color: aliceblue;
-
-
-}
-.copyRights{
-  /* padding: 20px ; */
-  background-color:#2d3436;
-  color: aliceblue;
-  text-align: center;
-  margin: 0;
-}
-
-
-
-
-/* ************************** contact us ***************************************** */
-.verificationsBox
-{
-  display: none ;
-}
-
-.verificationsBox div
-{
-  width: 100px;
-  animation-name: example;
-  animation-duration: 4s;
-  margin-top: 2em;
-  position: relative;
-  width: 80%;
-  /* bottom: 100px; */
- }
-
- @keyframes example { 
-   0%   {left:0px; }
- 25%  { left:200px;}
- 50%  { left:200px;}
- 75%  { left:0px; }
- 100% {left:0px; }
- }
-/* The element to apply the animation to */
