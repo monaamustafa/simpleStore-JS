@@ -1,17 +1,45 @@
+:root{
+  --mainColor: #8e44ad;
+  --whiteColor: #ecf0f1;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
 /* font-family: 'Anton', sans-serif;
 font-family: 'Dancing Script', cursive;
 font-family: 'Koulen', cursive;
 font-family: 'Lobster', cursive;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Orelega One', cursive; */
+/* #8e44ad */
 a{
   text-decoration: none;
 }
 img{
   width: 100%;
 }
+
+
+
+
+
 .mainSection{
   padding-top: 50px;
+  min-height: 100vh;
+}
+.scroll-top {
+  background-color: var(--mainColor) ;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+  /* display: none; */
+  color: var(--whiteColor);
 }
 
 
@@ -25,7 +53,7 @@ img{
   position: absolute;
   top: 30%;
   right: 30px;
-  transition: all ease-in-out 0.3;
+  transition: all ease-in-out 0.3s;
 }
 .rightarrow:hover{
   right: 20px;
@@ -35,7 +63,7 @@ img{
   position: absolute;
   top: 30%;
   left: 30px;
-  transition: all ease-in-out 0.3;
+  transition: all ease-in-out 0.3s;
 }
 
 .leftarrow:hover{
@@ -54,16 +82,21 @@ img{
 
 }
 .tabs a{
-  border: 1px solid rgb(78, 73, 73);
-  border-radius: 20px;
+  border: 1px solid var(--mainColor);
+  border-radius: 10px;
   text-align: center;
   margin: 0 auto;
-  color: aliceblue;
-
+  color: var(--whiteColor) !important;
   display: inline-block;
   padding: .9em 1.5em;
   text-align: center;
-  background-color: rgb(160, 84, 130);
+  background-color: var(--mainColor);
+ cursor: pointer;
+ transition: all ease-in-out 0.3s;
+}
+
+.tabs a:hover{
+  padding: .9em 2.3em;
 
 }
 
@@ -109,10 +142,11 @@ img{
 
 }
 .copyRights{
-  padding: 20px ;
-  background-color: rgb(29, 48, 48);
+  /* padding: 20px ; */
+  background-color:#2d3436;
   color: aliceblue;
   text-align: center;
+  margin: 0;
 }
 
 
